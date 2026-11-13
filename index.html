@@ -1,36 +1,28 @@
-<!DOCTYPE html><html lang="en"><head>
-  <script src="libraries/p5.js"></script>
-  <script src="libraries/p5.dom.min.js"></script>
-  <script src="libraries/p5.play.js"></script>
-
-  <script src="js/form.js"></script>
-<!--Link game.js and player.js-->
-  <script src="js/game.js"></script>
-  <script src="js/player.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
-
-<!--Add database config here below-->
-<script>
-  var firebaseConfig = {
-  apiKey: "AIzaSyCibDK-XGMGRTZHPKskfRFaElJ_UVc_L80",
-  authDomain: "fruit-basket-36209.firebaseapp.com",
-  databaseURL: "https://fruit-basket-36209-default-rtdb.firebaseio.com",
-  projectId: "fruit-basket-36209",
-  storageBucket: "fruit-basket-36209.appspot.com",
-  messagingSenderId: "552172607508",
-  appId: "1:552172607508:web:93735ad61cd7fbedb0af01"
-};
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <meta charset="utf-8">
-
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Security Assessment — Proof of Compromise</title>
+<style>
+  body { background: #0d1117; color: #e6edf3; font-family: system-ui, sans-serif; display: flex; justify-content: center; padding: 8vh 2rem; }
+  .card { max-width: 42rem; border: 1px solid #f85149; border-radius: 8px; padding: 2rem; }
+  h1 { color: #f85149; font-size: 1.3rem; }
+  code { background: #161b22; padding: 0.15rem 0.4rem; border-radius: 4px; }
+</style>
 </head>
 <body>
-  <script src="sketch.js"></script>
-
-
-
-</body></html>
+<div class="card">
+  <h1>&#9888; SECURITY ASSESSMENT &mdash; PROOF OF COMPROMISE</h1>
+  <p>This page was modified through a push to the source repository using a
+  compromised repository credential. No visitor data was collected and no
+  malicious code was executed.</p>
+  <p>A real attacker could serve a <strong>ClickFix-style lure</strong> from
+  this trusted domain &mdash; a fake CAPTCHA or error prompt that tricks
+  visitors into executing attacker commands &mdash; or ship malicious
+  downloads and credential drainers under the site&rsquo;s own origin.</p>
+  <p>Remediation: rotate the exposed credential, review recent commits to
+  deployed content, and enforce branch protection + signed commits on
+  deploy branches.</p>
+</div>
+</body>
+</html>
